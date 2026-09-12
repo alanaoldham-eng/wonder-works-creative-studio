@@ -1,41 +1,25 @@
 # Wonder Works Creative Studio
 
-Next.js 15 website for **Wonder Works Creative, LLC**, using the R8 *When the Lights Knock* cover artwork, the approved Wonder Works identities, Alana Oldham's real uploaded portrait, PostgreSQL, and a launch-team mailing list.
+Next.js 16 website for Wonder Works Creative, LLC, featuring *When the Lights Knock: Book One* and a Supabase-backed Launch Team signup.
 
-## Windows PowerShell setup
+## PowerShell setup
 
 ```powershell
-Set-Location C:\dev\WWCS\wwcs-web\wonder-works-studio-nextjs
+Set-Location "C:\dev\wwcs\web"
 npm install
 Copy-Item .env.example .env.local
 notepad .env.local
-```
-
-Create the PostgreSQL database and table:
-
-```powershell
-psql -U postgres -c "CREATE DATABASE wonderworks;"
-psql -U postgres -d wonderworks -f .\db\schema.sql
-```
-
-Start the website:
-
-```powershell
+npm run build
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+The site will be available at `http://localhost:3000`.
 
-## Environment variable
+## Supabase
 
-```env
-DATABASE_URL=postgresql://postgres:YOUR_PASSWORD@localhost:5432/wonderworks
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
-```
+Run `db/schema.sql` in the Supabase SQL Editor. Add these variables locally and in Vercel:
 
-## Image source policy
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`
 
-- `public/images/author/alana-oldham-real.jpg` is the exact uploaded portrait. It is not regenerated or retouched.
-- The book files under `public/images/books/` come from the uploaded R8 cover PDF.
-- `wtlk-r8-front-book-one.jpg` changes only the obsolete subtitle line for the website preview.
-- The back-cover blurb remains provisional and is not used as homepage copy.
+The public role can insert Launch Team signups but cannot read, update, or delete subscriber records.

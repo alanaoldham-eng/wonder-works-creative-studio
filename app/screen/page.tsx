@@ -1,0 +1,5 @@
+import PageShell from "@/components/PageShell";
+import Link from "next/link";
+export default function ScreenPage(){return <PageShell eyebrow="Wonder Works Creative" title="Screen" intro="Stories developed for the page can sometimes become stories for the screen. Wonder Works Creative is building a foundation for thoughtful adaptation rather than rushing every project into every medium.">
+<div className="content-grid two-col"><article className="content-card"><h2>Adaptation in development</h2><p><em>When the Lights Knock</em> is being developed as a trilogy with screen adaptation in mind. The current focus is preserving character, atmosphere, spiritual inquiry, and the human stakes at the center of the story.</p><Link className="button compact" href="/projects/when-the-lights-knock">View the featured project</Link></article><article className="content-card"><h2>Collaboration</h2><p>Future collaboration may include producers, screenwriters, directors, designers, and other creative partners whose work aligns with the project’s tone and values.</p><Link className="secondary-link" href="/contact">Start a conversation</Link></article></div>
+</PageShell>}
