@@ -64,11 +64,11 @@ export default function Home() {
         <div className="story-grid">
           <article className="story-card story-card-split">
             <div className="story-copy"><p>Algiers Point, New Orleans</p><h2>Leah Baptiste</h2><span>Hospice nurse. Keeper of compassion. Guiding others through endings while searching for a truth that begins anew.</span><Link href="/characters/leah-baptiste">Follow her journey <b>✦</b></Link></div>
-            <div className="story-visual"><Image className="story-image story-image-leah" src="/images/story/leah-imani-crop.jpg" alt="Leah Baptiste comforting Imani at Algiers Point" fill sizes="(max-width: 980px) 100vw, 50vw" /></div>
+            <div className="story-visual"><Image className="story-image story-image-leah" src="/images/story/leah-dock-card.jpg" alt="Leah Baptiste comforting Imani on the dock at Algiers Point" fill sizes="(max-width: 980px) 100vw, 50vw" /></div>
           </article>
           <article className="story-card story-card-split">
             <div className="story-copy"><p>Hessdalen Valley, Norway</p><h2>Dr. Elena Rostova</h2><span>Astrophysicist. Seeker of patterns. Chasing a phenomenon that defies explanation and changes everything.</span><Link href="/characters/elena-rostova">Follow her journey <b>✦</b></Link></div>
-            <div className="story-visual"><Image className="story-image" src="/images/story/elena-hessdalen-clean.jpg" alt="Snow-covered Hessdalen Valley beneath mysterious lights" fill sizes="(max-width: 980px) 100vw, 50vw" /></div>
+            <div className="story-visual"><Image className="story-image" src="/images/story/elena-valley-card.jpg" alt="Elena Rostova looking out over the snow-covered Hessdalen Valley at night" fill sizes="(max-width: 980px) 100vw, 50vw" /></div>
           </article>
         </div>
       </section>
