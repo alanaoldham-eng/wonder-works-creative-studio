@@ -197,7 +197,7 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
 .book-detail { grid-template-columns: minmax(240px,390px) 1fr; align-items: start; }
 .book-detail > img { width: 100%; height: auto; border: 1px solid rgba(167,236,243,.26); box-shadow: 0 30px 60px rgba(0,0,0,.55); }
 .character-detail { align-items: start; }
-.character-detail > img { width: 100%; height: 420px; object-fit: cover; border: 1px solid rgba(98,215,232,.25); }
+.character-detail > img { width: 100%; height: auto; border: 1px solid rgba(98,215,232,.25); }
 .platform-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
 .platform-card { display: flex; gap: 20px; align-items: center; scroll-margin-top: 110px; }
 .platform-card img { filter: brightness(0) invert(1); }
@@ -227,7 +227,6 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
   .page-hero { padding: 75px 0 55px; }
   .page-content { padding: 55px 0 75px; }
   .platform-grid { grid-template-columns: 1fr; }
-  .character-detail > img { height: 300px; }
 }
 
 /* August 2026 UI corrections */
@@ -305,7 +304,7 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
   object-position: center;
 }
 .story-visual .story-image-leah {
-  object-position: 53% center;
+  object-position: 52% 22%;
 }
 
 .contact-layout {
