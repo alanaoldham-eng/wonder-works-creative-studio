@@ -55,7 +55,7 @@ export default function Home() {
               {message && <p className="form-message" role="status">{message}</p>}
             </form>
           </div>
-          <div className="book-stage"><div className="cover-frame"><Image className="book-cover" src="/images/books/wtlk-r8-front-book-one-clean.jpg" alt="When the Lights Knock, Book One, by Alana Oldham" width={1765} height={2850} priority /></div></div>
+          <div className="book-stage"><div className="cover-frame"><Image className="book-cover" src="/images/books/wtlk-r8-front-no-subtitle.jpg" alt="When the Lights Knock cover art by Alana Oldham" width={1765} height={2850} priority /></div></div>
         </div>
       </section>
       <section className="follow-strip"><div className="shell follow-strip-inner"><p>Follow the journey</p><div className="socials">{socialLinks.map(({label,icon,slug})=><Link key={label} href={`/connect#${slug}`} aria-label={label}><Image src={icon} alt="" width={28} height={28} /><span>{label}</span></Link>)}</div></div></section>
