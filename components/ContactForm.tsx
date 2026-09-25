@@ -86,8 +86,8 @@ export default function ContactForm({ defaultInquiryType = "General inquiry" }: 
       </div>
 
       <div className="field-group">
-        <label htmlFor="contact-message">Message</label>
-        <textarea id="contact-message" name="message" required rows={8} maxLength={5000} />
+        <label htmlFor="contact-message">Message <span>(at least 10 characters)</span></label>
+        <textarea id="contact-message" name="message" required minLength={10} rows={8} maxLength={5000} />
       </div>
 
       <div className="form-consent">
