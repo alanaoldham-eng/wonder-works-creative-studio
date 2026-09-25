@@ -105,7 +105,7 @@ export default function CodePage() {
       ))}
     </div>
 
-    <h2 className="section-heading">Selected work</h2>
+    <h2 className="section-heading">Recent work</h2>
     <div className="content-grid two-col">
       {work.map((project) => (
         <article className="content-card" key={project.title}>
@@ -121,7 +121,7 @@ export default function CodePage() {
       ))}
     </div>
 
-    <h2 className="section-heading">Where the work lives</h2>
+    <h2 className="section-heading">Public record</h2>
     <div className="content-grid two-col">
       <article className="content-card">
         <h2>GitHub</h2>
