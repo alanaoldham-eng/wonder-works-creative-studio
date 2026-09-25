@@ -23,3 +23,21 @@ Run `db/schema.sql` in the Supabase SQL Editor. Add these variables locally and 
 - `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`
 
 The public role can insert Launch Team signups but cannot read, update, or delete subscriber records.
+
+## Contact message notifications
+
+New rows in `contact_messages` trigger an email through a Supabase Database
+Webhook and the `contact-notify` Edge Function in `supabase/functions/`. The
+function sends via the Resend API.
+
+Secrets the function needs (set with `supabase secrets set`):
+
+- `RESEND_API_KEY` – API key from resend.com
+- `NOTIFY_EMAIL` – where notifications are delivered
+- `WEBHOOK_SECRET` – shared secret; the webhook must send it as the
+  `x-webhook-secret` header, and the function rejects anything else
+- `NOTIFY_FROM` – optional sender address, defaults to Resend's test sender
+
+Deploy with `supabase functions deploy contact-notify --no-verify-jwt`. The
+function is written for Deno and is excluded from the Next.js TypeScript and
+ESLint configuration.
