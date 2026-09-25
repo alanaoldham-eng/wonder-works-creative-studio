@@ -6,7 +6,7 @@ export default function SiteHeader() {
     <header className="site-header">
       <nav className="shell nav" aria-label="Primary navigation">
         <Link className="brand" href="/" aria-label="Wonder Works Creative home">
-          <Image src="/images/logos/wonder-works-creative-horizontal.jpg" alt="Wonder Works Creative Studio" width={620} height={349} priority />
+          <Image src="/images/logos/wonder-works-creative-horizontal-trim.png" alt="Wonder Works Creative Studio" width={1372} height={519} priority />
         </Link>
         <div className="navlinks">
           <Link href="/publishing">Publishing</Link>
