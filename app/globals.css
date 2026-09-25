@@ -91,8 +91,6 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
 .section-title span:last-child { background: linear-gradient(90deg, var(--gold), transparent); }
 .story-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
 .story-card { min-height: 380px; position: relative; overflow: hidden; border: 1px solid rgba(98,215,232,.2); background-size: cover; background-position: center; }
-.elena-card { background-image: linear-gradient(90deg, rgba(3,10,17,.98) 0%, rgba(3,10,17,.86) 45%, rgba(3,10,17,.12) 100%), url('/images/story/elena-hessdalen-r8.jpg'); }
-.leah-card { background-image: linear-gradient(90deg, rgba(3,10,17,.98) 0%, rgba(3,10,17,.86) 45%, rgba(3,10,17,.12) 100%), url('/images/story/leah-algiers-r8.jpg'); }
 .story-copy { position: absolute; inset: 0; width: 63%; padding: 47px 38px; display: flex; flex-direction: column; justify-content: center; }
 .story-copy p { color: var(--gold); text-transform: uppercase; letter-spacing: .18em; font-size: .68rem; }
 .story-copy h2 { font-size: 2.25rem; text-transform: uppercase; margin: 5px 0 12px; }
@@ -165,7 +163,6 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
 .story-image { position: absolute !important; inset: 0; width: 100% !important; height: 100% !important; object-fit: cover; z-index: -3; }
 .story-image-elena { object-position: 58% center; }
 .story-shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, rgba(3,10,17,.98) 0%, rgba(3,10,17,.9) 43%, rgba(3,10,17,.2) 72%, rgba(3,10,17,.08) 100%); }
-.elena-card, .leah-card { background-image: none; }
 .story-copy { z-index: 1; }
 
 .footer-grid > a { display: grid; grid-template-columns: 28px 1fr; column-gap: 12px; align-items: start; }
