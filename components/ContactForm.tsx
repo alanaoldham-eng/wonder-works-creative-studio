@@ -15,7 +15,10 @@ export default function ContactForm({ defaultInquiryType = "General inquiry" }: 
     setBusy(true);
     setMessage("");
 
-    const form = new FormData(event.currentTarget);
+    // Hold the element: React clears event.currentTarget once this handler
+    // yields at the first await, and reset() on null would throw.
+    const formElement = event.currentTarget;
+    const form = new FormData(formElement);
     const payload = {
       firstName: String(form.get("firstName") || ""),
       lastName: String(form.get("lastName") || ""),
@@ -34,7 +37,7 @@ export default function ContactForm({ defaultInquiryType = "General inquiry" }: 
       });
       const data = await response.json();
       setMessage(data.message);
-      if (response.ok) event.currentTarget.reset();
+      if (response.ok) formElement.reset();
     } catch {
       setMessage("Your message could not be sent right now. Please try again shortly.");
     } finally {
