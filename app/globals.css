@@ -106,9 +106,9 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
 .author-copy h2 { margin: 5px 0 12px; font-size: 3.2rem; text-transform: uppercase; }
 .author-copy blockquote { margin: 0 0 17px; color: var(--cream); font-size: 1.7rem; line-height: 1.25; }
 .author-copy > p:last-of-type { color: #aebbc5; line-height: 1.75; }
-.compact { margin-top: 18px; padding: 11px 15px; }
+.compact { margin-top: 18px; padding: 13px 21px; }
 .imprint { padding-left: 38px; border-left: 1px solid rgba(255,255,255,.12); }
-.imprint img { width: 100%; max-height: 250px; object-fit: contain; object-position: center; background: #06111b; }
+.imprint img { display: block; width: 100%; max-height: 250px; margin-bottom: 22px; object-fit: contain; object-position: center; background: #06111b; }
 .imprint-line { color: var(--gold); font-style: italic; }
 .imprint p:last-child { color: #aebbc5; line-height: 1.7; }
 
@@ -393,3 +393,5 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
   letter-spacing: .06em;
   text-transform: uppercase;
 }
+
+.author-copy .compact { margin-right: 22px; }
