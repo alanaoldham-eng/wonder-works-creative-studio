@@ -5,7 +5,7 @@ Next.js 16 website for Wonder Works Creative, LLC, featuring *When the Lights Kn
 ## PowerShell setup
 
 ```powershell
-Set-Location "C:\dev\wwcs\web"
+Set-Location "C:\dev\wwcs\wonder-works-creative-studio"
 npm install
 Copy-Item .env.example .env.local
 notepad .env.local
