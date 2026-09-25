@@ -364,3 +364,36 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
   .story-visual { min-height: 315px; }
   .form-grid.two-fields { grid-template-columns: 1fr; }
 }
+
+/* Code page */
+.section-heading {
+  margin: 72px 0 26px;
+  font-size: clamp(2rem, 3.4vw, 2.7rem);
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.tech-list li {
+  padding: 6px 10px;
+  border: 1px solid rgba(98,215,232,.28);
+  color: #cfdae3;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.work-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0 0;
+  font-size: .82rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
