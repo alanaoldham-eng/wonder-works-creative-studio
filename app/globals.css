@@ -89,7 +89,7 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
 .section-title { display: flex; align-items: center; justify-content: center; gap: 18px; margin-bottom: 42px; color: var(--gold); text-transform: uppercase; letter-spacing: .32em; font-size: .75rem; font-weight: 700; }
 .section-title span { width: 80px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
 .section-title span:last-child { background: linear-gradient(90deg, var(--gold), transparent); }
-.story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+.story-grid { display: grid; grid-template-columns: 1fr; gap: 25px; }
 .story-card { min-height: 380px; position: relative; overflow: hidden; border: 1px solid rgba(98,215,232,.2); background-size: cover; background-position: center; }
 .elena-card { background-image: linear-gradient(90deg, rgba(3,10,17,.98) 0%, rgba(3,10,17,.86) 45%, rgba(3,10,17,.12) 100%), url('/images/story/elena-hessdalen-r8.jpg'); }
 .leah-card { background-image: linear-gradient(90deg, rgba(3,10,17,.98) 0%, rgba(3,10,17,.86) 45%, rgba(3,10,17,.12) 100%), url('/images/story/leah-algiers-r8.jpg'); }
@@ -236,10 +236,11 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
   z-index: 0;
   right: 0;
   bottom: 0;
-  width: 58%;
-  height: 23%;
+  left: 0;
+  width: 100%;
+  height: 42%;
   pointer-events: none;
-  background: linear-gradient(180deg, transparent 0%, rgba(3,10,17,.78) 48%, var(--ink) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(3,10,17,.86) 30%, var(--ink) 62%);
 }
 
 .signup-fields {
@@ -272,9 +273,9 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
 .socials a:hover span { color: white; }
 
 .story-card-split {
-  min-height: 390px;
+  min-height: 430px;
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(220px, .98fr);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 1.12fr);
   background: linear-gradient(145deg, rgba(9,27,43,.98), rgba(3,11,19,.98));
   isolation: auto;
 }
@@ -287,7 +288,7 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
 }
 .story-visual {
   position: relative;
-  min-height: 390px;
+  min-height: 430px;
   overflow: hidden;
   background: #071321;
 }
@@ -355,7 +356,7 @@ h1 { margin: 10px 0 5px; font-size: clamp(4rem, 8vw, 7.8rem); line-height: .78; 
 }
 
 @media (max-width: 650px) {
-  .hero-name-mask { width: 100%; height: 28%; }
+  .hero-name-mask { height: 48%; }
   .signup-fields { grid-template-columns: 1fr; }
   .signup-fields button { grid-column: auto; }
   .follow-strip-inner { min-height: auto; align-items: center; }

@@ -64,18 +64,18 @@ export default function Home() {
         <div className="story-grid">
           <article className="story-card story-card-split">
             <div className="story-copy"><p>Hessdalen Valley, Norway</p><h2>Dr. Elena Rostova</h2><span>Astrophysicist. Seeker of patterns. Chasing a phenomenon that defies explanation and changes everything.</span><Link href="/characters/elena-rostova">Follow her journey <b>✦</b></Link></div>
-            <div className="story-visual"><Image className="story-image" src="/images/story/elena-hessdalen-clean.jpg" alt="Snow-covered Hessdalen Valley beneath mysterious lights" fill sizes="(max-width: 980px) 100vw, 28vw" /></div>
+            <div className="story-visual"><Image className="story-image" src="/images/story/elena-hessdalen-clean.jpg" alt="Snow-covered Hessdalen Valley beneath mysterious lights" fill sizes="(max-width: 980px) 100vw, 50vw" /></div>
           </article>
           <article className="story-card story-card-split">
             <div className="story-copy"><p>Algiers Point, New Orleans</p><h2>Leah Baptiste</h2><span>Hospice nurse. Keeper of compassion. Guiding others through endings while searching for a truth that begins anew.</span><Link href="/characters/leah-baptiste">Follow her journey <b>✦</b></Link></div>
-            <div className="story-visual"><Image className="story-image story-image-leah" src="/images/story/leah-imani-crop.jpg" alt="Leah Baptiste comforting Imani at Algiers Point" fill sizes="(max-width: 980px) 100vw, 28vw" /></div>
+            <div className="story-visual"><Image className="story-image story-image-leah" src="/images/story/leah-imani-crop.jpg" alt="Leah Baptiste comforting Imani at Algiers Point" fill sizes="(max-width: 980px) 100vw, 50vw" /></div>
           </article>
         </div>
       </section>
       <section className="author-hub shell">
         <div className="author-image-wrap"><Image src="/images/author/alana-oldham-real.jpg" alt="Alana Oldham wearing a dark blue science-fiction uniform" width={1254} height={1254} /></div>
         <div className="author-copy"><p className="eyebrow">Author & Creative Founder</p><h2>Alana Oldham</h2><blockquote>“What if humanity’s greatest encounter isn’t about who has come, but who we become?”</blockquote><p>Alana writes at the intersection of science, spirituality, consciousness, and the human heart. <em>When the Lights Knock</em> begins a larger world designed for books, screen adaptation, and future interactive experiences.</p><Link className="button compact" href="/events">Meet Alana at an event ✦</Link><Link className="secondary-link" href="/about">Read Alana’s story</Link></div>
-        <div className="imprint"><Image src="/images/logos/wonder-works-publishing-sheet.png" alt="Wonder Works Publishing" width={1254} height={1254} /><p className="imprint-line">An imprint of Wonder Works Creative, LLC</p><p>Stories that expand consciousness, elevate compassion, and illuminate what it means to be human.</p><Link className="secondary-link" href="/publishing">Explore the imprint</Link></div>
+        <div className="imprint"><Image src="/images/logos/wonder-works-publishing-logo.png" alt="Wonder Works Publishing" width={488} height={521} /><p className="imprint-line">An imprint of Wonder Works Creative, LLC</p><p>Stories that expand consciousness, elevate compassion, and illuminate what it means to be human.</p><Link className="secondary-link" href="/publishing">Explore the imprint</Link></div>
       </section>
       <SiteFooter />
     </main>
