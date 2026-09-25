@@ -36,7 +36,20 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: true, message: "Thank you. Your message has been received." }, { status: 201 });
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return NextResponse.json({ ok: false, message: "Please complete all required fields with valid information." }, { status: 400 });
+      const labels: Record<string, string> = {
+        firstName: "first name",
+        lastName: "last name",
+        email: "email address",
+        organization: "organization",
+        inquiryType: "inquiry type",
+        subject: "subject",
+        message: "message (at least 10 characters)",
+      };
+      const fields = [...new Set(error.issues.map((issue) => labels[String(issue.path[0])] ?? String(issue.path[0])))];
+      return NextResponse.json(
+        { ok: false, message: `Please check your ${fields.join(", ")} and try again.` },
+        { status: 400 },
+      );
     }
     console.error("Contact route error:", error);
     return NextResponse.json({ ok: false, message: "Your message could not be sent." }, { status: 500 });
